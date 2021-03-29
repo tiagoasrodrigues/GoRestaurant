@@ -4,7 +4,7 @@ import { FiEdit3, FiTrash } from 'react-icons/fi';
 import { Container } from './styles';
 import api from '../../services/api';
 
-interface Ifood {
+interface IFood {
   id: number;
   name: string;
   description: string;
@@ -14,8 +14,8 @@ interface Ifood {
 }
 
 interface FoodProps {
-  food: Ifood
-  handleEditFood: (food: Ifood) => void;
+  food: IFood
+  handleEditFood: (food: IFood) => void;
   handleDelete: (id: number) => void;
 }
 
